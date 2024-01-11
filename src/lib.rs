@@ -224,7 +224,7 @@ cfg_if! {
         mod util_libc;
         mod use_file;
         mod lazy;
-        #[path = "linux_android.rs"] mod imp;
+        #[path = "linux_android.rs"] pub mod imp;
     } else if #[cfg(any(target_os = "illumos", target_os = "solaris"))] {
         mod util_libc;
         mod use_file;
